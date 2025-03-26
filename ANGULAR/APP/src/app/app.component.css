@@ -1,0 +1,65 @@
+.but {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    margin:auto;
+    justify-content: center; /* Horizontally centers the buttons */
+    align-items: center; /* Vertically centers the buttons */
+    height: 100vh; /* Makes the container take up the full height of the viewport */
+  }
+  
+  /* Style the login button */
+  #login {
+    background-color: green; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    margin-right: 20px; /* Space between the two buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  /* Change the background color when hovering over the login button */
+  #login:hover {
+    background-color: darkgreen; /* Dark green on hover */
+  }
+  
+  /* Style the registrazione button */
+  #registrazione {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  #titolo{
+    margin-top: 10px;
+    margin-bottom:300px;
+    padding: 10px;
+    border-bottom: 10px;
+    padding-bottom: 10px;
+    color:rgb(198, 133, 11);
+    opacity:1px;
+    font-size: 50px;
+    font-style: oblique;
+    animation: change 2s infinite
+  }
+  @keyframes change{
+    0% {
+      transform: scale(1);  /* Stato iniziale (senza ingrandirsi) */
+      opacity: 1;           /* Opacità normale */
+    }
+    50% {
+      transform: scale(1.2); /* Ingrandisce l'elemento al 120% */
+      opacity: 0.7;          /* Riduce leggermente l'opacità */
+    }
+    100% {
+      transform: scale(1);  /* Torna alla dimensione originale */
+      opacity: 1;           /* Ritorna all'opacità normale */
+    }
+  }

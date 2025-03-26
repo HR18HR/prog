@@ -1,0 +1,17 @@
+<button class="btn-white" (click)="INDI()">Registrazione</button>
+<div class="login-container">
+  <h2>Login</h2>
+    <input type="text" class="input-field" placeholder="Username" required [(ngModel)]="username">
+    <input type="password" class="input-field" placeholder="Password" required [(ngModel)]="password" (keydown.enter)="ACCEDI()">
+    <button type="submit" class="btn-login" (click)="ACCEDI()">Accedi</button>
+</div>
+<div class="error-message" *ngIf="Errore.tentativi==1">
+  {{Errore.message}}
+</div>
+<div class="message" *ngIf="benvenuto=='Benvenuto'">
+  {{benvenuto}}
+</div>
+
+<div class="chat" *ngIf="chat!='lo'">
+  {{chat}}
+</div>
